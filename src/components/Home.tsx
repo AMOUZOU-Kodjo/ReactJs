@@ -3,7 +3,7 @@ import img from '../assets/photo.jpg'
 
 const Home = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10" id="Accueil">
+    <div className="flex md:h-screen flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10" id="Accueil">
       <div className="flex flex-col ">
         <h1 className="text-3xl md:text-2xl font-bold text-center md:text-left mt-4 md:mt-10">
           Bonjour, Je suis <span className="text-accent"> MarcDev</span>

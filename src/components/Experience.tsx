@@ -8,7 +8,7 @@ import imgNEXT from "../assets/techno/next-js.webp";
 import imgNODE from "../assets/techno/node-js.png";
 import imgTYPE from "../assets/techno/typescript.svg";
 import imgTAILWIND from "../assets/techno/tailwind.png";
-import imgPRISMA from "../assets/techno/prisma.webp";
+
 
 import google from "../assets/companies/google.png";
 import meta from "../assets/companies/meta.webp";
@@ -25,7 +25,7 @@ const skills = [
     { id: 6, name: "Tailwind CSS", image: imgTAILWIND },
     { id: 7, name: "TypeScript", image: imgTYPE },
     { id: 8, name: "Next.js", image: imgNEXT },
-    { id: 9, name: "Prisma", image: imgPRISMA },
+    
 ];
 
 
@@ -69,7 +69,7 @@ const experiences = [
 
 const Experience = () => {
     return (
-        <div id="Experience" >
+        <div id="Experience" className="md:h-screen" >
             <Title title="Expériences" />
             <div className="flex  flex-col-reverse md:flex-row justify-center items-center">
                 <div className="flex flex-wrap gap-4  justify-center items-center md:w-1/4 mt-4 md:mt-0">
@@ -84,6 +84,7 @@ const Experience = () => {
                         </div>
                     ))}
                 </div>
+
 
                 <div className="md:ml-4 flex flex-col space-y-4">
                     {experiences.map((expericence) => (
@@ -113,7 +114,8 @@ const Experience = () => {
                             </ul>
                         </div>
                     ))}
-                </div>
+                </div> 
+
             </div>
         </div>
     )
